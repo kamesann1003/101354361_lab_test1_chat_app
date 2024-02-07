@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Chat App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Chat App</h2>
+      <form id="signup-form" class="hidden">
+        <label for="signup-username">Username:</label>
+        <input type="text" id="signup-username" name="signup-username" required>
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" name="signup-password" required>
+        <button type="submit">Sign Up</button>
+        <p class="toggle-form">Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+      </form>
+      <form id="login-form">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" name="login-username" required>
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="login-password" required>
+        <button type="submit">Login</button>
+        <p class="toggle-form">Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
